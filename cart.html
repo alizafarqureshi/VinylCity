@@ -40,7 +40,7 @@
   <!-- CART SECTION -->
   <section>
     <div class="section-title">
-      <h2>Shopping Cart (1 Item in Your Cart)</h2>
+      <h2>Shopping Cart (<span id="cart-count">0 items</span>)</h2>
     </div>
 
     <div class="panel cart-panel">
@@ -54,29 +54,16 @@
         <span></span>
       </div>
 
-      <!-- Static Cart Row -->
-      <div class="cart-row">
-        <div class="cart-cover">
-          <img src="img/AfterHours.png" alt="Starboy">
-        </div>
+      <!-- Dynamic cart rows will be injected here -->
+      <div id="cart-rows"></div>
 
-        <div class="cart-artist">
-          The Weeknd
-        </div>
+    </div>
 
-        <div class="cart-album">
-          Starboy
-        </div>
-
-        <div class="cart-qty">
-          1
-        </div>
-
-        <div class="cart-remove-wrapper">
-          <button class="cart-remove-btn">Remove</button>
-        </div>
-      </div>
-
+    <!-- Checkout button -->
+    <div class="cart-actions">
+      <button class="btn-primary" type="button" id="checkout-btn">
+        Checkout
+      </button>
     </div>
 
   </section>

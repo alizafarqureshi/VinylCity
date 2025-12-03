@@ -125,12 +125,36 @@ button {
   align-items: center;
   justify-content: center;
   background: #f9fafb;
+  position: relative; 
 }
 
 .icon-pill img {
   width: 35px;
   height: 35px;
   object-fit: contain;
+}
+/* Cart count badge on navbar icon */
+.cart-count-pill {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: #ef4444;
+  color: #ffffff;
+  font-size: 10px;
+  display: none; 
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Checkout button container on cart page */
+.cart-actions {
+  margin-top: 10px;
+  text-align: right;
 }
 
 .login-chip {
